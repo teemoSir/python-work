@@ -1,0 +1,872 @@
+[
+    {
+        "codenum": "101",
+        "xzname": "小麦（直接物化成本）",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 1
+    },
+    {
+        "codenum": "253",
+        "xzname": "小麦（大灾）",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 2
+    },
+    {
+        "codenum": "10105",
+        "xzname": "小麦（完全成本）",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 3
+    },
+    {
+        "codenum": "102",
+        "xzname": "玉米（直接物化成本）",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": " 种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 4
+    },
+    {
+        "codenum": "10209",
+        "xzname": "玉米（大灾）",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 5
+    },
+    {
+        "codenum": "10210",
+        "xzname": "玉米（完全成本）",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 6
+    },
+    {
+        "codenum": "103",
+        "xzname": "水稻（直接物化成本）",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 7
+    },
+    {
+        "codenum": "251",
+        "xzname": "水稻（大灾）",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 8
+    },
+    {
+        "codenum": "252",
+        "xzname": "水稻（完全成本）",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 8
+    },
+    {
+        "codenum": "104",
+        "xzname": "大豆",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 8
+    },
+    {
+        "codenum": "120",
+        "xzname": "棉花",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 10
+    },
+    {
+        "codenum": "130",
+        "xzname": "花生",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 11
+    },
+    {
+        "codenum": "131",
+        "xzname": "马铃薯(春)",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 12
+    },
+    {
+        "codenum": "133",
+        "xzname": "日光温室",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 13
+    },
+    {
+        "codenum": "132",
+        "xzname": "马铃薯(秋)",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 13
+    },
+    {
+        "codenum": "134",
+        "xzname": "大拱棚",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 14
+    },
+    {
+        "codenum": "105",
+        "xzname": "苹果",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 15
+    },
+    {
+        "codenum": "106",
+        "xzname": "桃",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 16
+    },
+    {
+        "codenum": "107",
+        "xzname": "梨",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 17
+    },
+    {
+        "codenum": "141",
+        "xzname": "冬枣",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 18
+    },
+    {
+        "codenum": "108",
+        "xzname": "葡萄",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 108
+    },
+    {
+        "codenum": "176",
+        "xzname": "茶叶",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 176
+    },
+    {
+        "codenum": "177",
+        "xzname": "核桃",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 177
+    },
+    {
+        "codenum": "181",
+        "xzname": "水稻制种险",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 181
+    },
+    {
+        "codenum": "182",
+        "xzname": "小麦制种险",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 182
+    },
+    {
+        "codenum": "183",
+        "xzname": "玉米制种险",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 183
+    },
+    {
+        "codenum": "214",
+        "xzname": "燕麦",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 214
+    },
+    {
+        "codenum": "259",
+        "xzname": "西瓜",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 259
+    },
+    {
+        "codenum": "260",
+        "xzname": "莲藕",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 260
+    },
+    {
+        "codenum": "261",
+        "xzname": "猕猴桃",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 261
+    },
+    {
+        "codenum": "262",
+        "xzname": "草莓",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 262
+    },
+    {
+        "codenum": "263",
+        "xzname": "蓝莓",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 263
+    },
+    {
+        "codenum": "269",
+        "xzname": "樱桃",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 269
+    },
+    {
+        "codenum": "270",
+        "xzname": "生姜",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 270
+    },
+    {
+        "codenum": "271",
+        "xzname": "花卉",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 271
+    },
+    {
+        "codenum": "272",
+        "xzname": "杂粮",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 272
+    },
+    {
+        "codenum": "273",
+        "xzname": "石榴",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 273
+    },
+    {
+        "codenum": "274",
+        "xzname": "中草药",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 274
+    },
+    {
+        "codenum": "275",
+        "xzname": "酿酒葡萄",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 275
+    },
+    {
+        "codenum": "276",
+        "xzname": "西红柿",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 276
+    },
+    {
+        "codenum": "277",
+        "xzname": "西洋参",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 277
+    },
+    {
+        "codenum": "278",
+        "xzname": "甘薯",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 278
+    },
+    {
+        "codenum": "279",
+        "xzname": "山楂",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 279
+    },
+    {
+        "codenum": "280",
+        "xzname": "谷子",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 280
+    },
+    {
+        "codenum": "281",
+        "xzname": "银杏果",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 281
+    },
+    {
+        "codenum": "282",
+        "xzname": "金银花",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 282
+    },
+    {
+        "codenum": "283",
+        "xzname": "大蒜",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 283
+    },
+    {
+        "codenum": "284",
+        "xzname": "苜蓿",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 284
+    },
+    {
+        "codenum": "299",
+        "xzname": "甜瓜",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 299
+    },
+    {
+        "codenum": "325",
+        "xzname": "桑树",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 325
+    },
+    {
+        "codenum": "515",
+        "xzname": "板栗",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 515
+    },
+    {
+        "codenum": "807",
+        "xzname": "蜜薯",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 807
+    },
+    {
+        "codenum": "853",
+        "xzname": "玉米收入",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 853
+    },
+    {
+        "codenum": "15609X",
+        "xzname": "蔬菜工厂化育苗生产及种苗质量保险",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 999
+    },
+    {
+        "codenum": "105X",
+        "xzname": "苹果（市县）",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 1056
+    },
+    {
+        "codenum": "101BC",
+        "xzname": "小麦种植补充保险",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 10123
+    },
+    {
+        "codenum": "10212",
+        "xzname": "玉米(直接物化成本,复合)",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 10212
+    },
+    {
+        "codenum": "10213",
+        "xzname": " 玉米(完全成本,复合)",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 10213
+    },
+    {
+        "codenum": "102BC",
+        "xzname": "玉米种植补充保险",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 10223
+    },
+    {
+        "codenum": "103BC",
+        "xzname": "水稻种植补充保险",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 10323
+    },
+    {
+        "codenum": "10402",
+        "xzname": "大豆(复合)",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 10402
+    },
+    {
+        "codenum": "10701",
+        "xzname": "莱阳梨",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 10701
+    },
+    {
+        "codenum": "15601",
+        "xzname": "有机蔬菜",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 15601
+    },
+    {
+        "codenum": "15603",
+        "xzname": "大葱",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 15603
+    },
+    {
+        "codenum": "15902",
+        "xzname": "辣椒",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 15902
+    },
+    {
+        "codenum": "177X",
+        "xzname": "核桃（区县）",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 17702
+    },
+    {
+        "codenum": "26901",
+        "xzname": "大樱桃",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 26901
+    },
+    {
+        "codenum": "270X",
+        "xzname": "生姜（市级）",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 27002
+    },
+    {
+        "codenum": "283X",
+        "xzname": "大蒜（市级）",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 28302
+    },
+    {
+        "codenum": "317X",
+        "xzname": "留兰香（区县）",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 31702
+    },
+    {
+        "codenum": "318X",
+        "xzname": "玫瑰花（市级）",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 31802
+    },
+    {
+        "codenum": "32301",
+        "xzname": "青萝卜",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 32301
+    },
+    {
+        "codenum": "323SX",
+        "xzname": "萝卜（市县）",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 32311
+    },
+    {
+        "codenum": "397X",
+        "xzname": "其他核果类水果和果树保险",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 39702
+    },
+    {
+        "codenum": "71801",
+        "xzname": "大豆玉米复合补充保险（成本）",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 71801
+    },
+    {
+        "codenum": "805SX",
+        "xzname": "无花果（市县）",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 80511
+    },
+    {
+        "codenum": "806SX",
+        "xzname": "设施花卉（市县）",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 80611
+    },
+    {
+        "codenum": "85302",
+        "xzname": "玉米收入（复合）",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 85302
+    },
+    {
+        "codenum": "26902X",
+        "xzname": "济南樱桃（树）种植保险",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "种植业",
+        "insurancetypeid": "1",
+        "orderIndex": 269022
+    },
+    {
+        "codenum": "10106",
+        "xzname": "小麦（最低收入）",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "最低收入险",
+        "insurancetypeid": "10",
+        "orderIndex": 10106
+    },
+    {
+        "codenum": "10211",
+        "xzname": "玉米（最低收入）",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "最低收入险",
+        "insurancetypeid": "10",
+        "orderIndex": 10211
+    },
+    {
+        "codenum": "402",
+        "xzname": "能繁母猪",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "养殖业",
+        "insurancetypeid": "2",
+        "orderIndex": 402
+    },
+    {
+        "codenum": "404",
+        "xzname": "奶牛",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "养殖业",
+        "insurancetypeid": "2",
+        "orderIndex": 403
+    },
+    {
+        "codenum": "403",
+        "xzname": "育肥猪",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "养殖业",
+        "insurancetypeid": "2",
+        "orderIndex": 404
+    },
+    {
+        "codenum": "405",
+        "xzname": "肉牛",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "养殖业",
+        "insurancetypeid": "2",
+        "orderIndex": 405
+    },
+    {
+        "codenum": "406",
+        "xzname": "肉羊",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "养殖业",
+        "insurancetypeid": "2",
+        "orderIndex": 406
+    },
+    {
+        "codenum": "407",
+        "xzname": "肉鸡",
+        "description": null,
+        "memo": null,
+        "tablealias": null,
+        "insurancetype": "养殖业",
+        "insurancetypeid": "2",
+        "orderIndex": 407
+    }
+]
