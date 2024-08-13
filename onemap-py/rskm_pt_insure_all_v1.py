@@ -9,6 +9,7 @@ import json
 from datetime import datetime, timedelta
 import hashlib
 import random
+import geojsonio
 
 
 
@@ -35,6 +36,7 @@ size = 30
 
 # http://59.110.61.7:8092/helper/index.html
 def getinsdata():
+    print("-----------------------------------发起数据请求----------------------------------")
     timet = str(datetime.now() - timedelta(seconds=4))
     action = "/api/syncinsurance/getinsdata/{}".format(size)
 
@@ -173,38 +175,56 @@ def getinsdata():
     if response.status_code:
         if response.text:
             # 验证是否是完整数据
-            if response.text[-2:] != "}]":
-                print("异常跳过：response.text 不是完整数据")
+            #if response.text[-2:] != "}]":
+            #    print("异常跳过：response.text 不是完整数据")
             insurance_json = json.loads(response.text)
 
             for item in insurance_json:
                 # print(item["geojsonstr"])
-                print("==============")
                 geojsonstr = item["geojsonstr"]
-                # print(geojsonstr)
-                print("==============")
-                if len(geojsonstr) > 0:
-                    # 是否需要新增
-                    if str(item["updateornot"]) == "1":
-                        sql = loadGeometry(item, json.loads(item["geojsonstr"]))
-                        bool = True
-                        for geog in sql:
-                            if str(geog["wkt_geom"]) == "":
-                                bool = False
+                print(" ")
+                print("||||||||||||||||     geojsonstr start     |||||||||||||||||")
+                print(item)
+                print("||||||||||||||||     geojsonstr end     |||||||||||||||||")
+                print(" ")
+                
+                # 将ESRI JSON转换为Python字典
+                esri_dict = json.loads(geojsonstr)
 
-                        if bool == True:
-                            global pgsql
-                            pgsql = pgsql + sql
-                            pgsql_bj.append(1)
-                        else:
-                            pgsql_bj.append(-1)
+                # 将ESRI JSON转换为GeoJSON
+                geojsons = geojsonio.esri_to_geojson(esri_dict)
 
-                    else:
-                        pgsql_delete.append(item["insurancenum"])
-
-                else:
-                    print("异常跳过：geojsonstr字段缺失")
+                # 打印转换后的GeoJSON
+                print(geojsons)
+                
+                if len(geojsonstr) <= 0:
+                    print("异常跳过：geojsonstr或features字段缺失")
                     pgsql_bj.append(-1)
+                else:
+                    print(hasattr(json.loads(geojsonstr),"features"))
+                    if hasattr(json.loads(geojsonstr),"features")==True:
+                        print("features = "+hasattr(json.loads(geojsonstr),"features"))
+                        # 是否需要新增
+                        if str(item["updateornot"]) == "1":
+                            sql =loadGeometry(item, json.loads(geojsonstr))
+                            
+                            # 默认可添加
+                            bool = True
+                            for geog in sql:
+                                if str(geog["wkt_geom"]) == "":
+                                    bool = False
+
+                            if bool == True:
+                                global pgsql
+                                pgsql = pgsql + sql
+                                pgsql_bj.append(1)
+                            else:
+                                pgsql_bj.append(-1)
+
+                        else:
+                            pgsql_delete.append(item["insurancenum"])
+                    else:
+                        pgsql_bj.append(-1)
 
                 list_bill.append(
                     {
@@ -224,16 +244,19 @@ def getinsdata():
 
 # 读取json到几何图形列
 def loadGeometry(data, json):
-    # print("loadGeometry")
+    print("-----------------------------------读取几何图形列----------------------------------")
+    print("data："+str(json["features"]))
     # print(insurance_json)
     # print(esri_json)
     listgeojson = []
     srid = ""
-    if "wkid" in json["spatialReference"]:
-        srid = json["spatialReference"]["wkid"]
+    #if "wkid" in json["spatialReference"]:
+    #    srid = json["spatialReference"]["wkid"]
 
     # 读取 Esri JSON 文件
     for feature in json["features"]:
+        
+
 
         # 建立标准json
         geojson = {
@@ -269,7 +292,9 @@ def loadGeometry(data, json):
         if "A11" in feature["attributes"]:
             A11 = feature["attributes"]["A11"]
 
-        print("-{}-{}-{}-{}-".format(T, R, A12, A11))
+        #print("-{}-{}-{}-{}-".format(T, R, A12, A11))
+        print("#######################      start       ############################")
+        print(str(data["insurancenum"])+","+str(data["insured"])+","+str(data["insuredquantity"])+","+str(data["insured"]))
         listgeojson.append(
             {
                 "wkt_geom": wkt_geom,
@@ -291,10 +316,13 @@ def loadGeometry(data, json):
                 "update_data":datetime.now()
             }
         )
+    print(" ")
     return listgeojson
 
 
 def connPgInstall():
+    print("-----------------------------------更新到数据库----------------------------------")
+    print("data:"+str(len(pgsql))+"条记录")
 
     # 建立数据库连接
     conn = psycopg2.connect(
@@ -333,7 +361,7 @@ def connPgInstall():
                 ),
             )
         # print(sql)
-        print("    +1批次 更新    ")
+        print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>> +1批次 更新 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<")
 
         # 提交事务
         conn.commit()
@@ -353,7 +381,8 @@ def connPgInstall():
 
 
 def queryDiff():
-    print("需要清空的数据:" + str(pgsql_delete))
+    print("-----------------------------------删除历史数据----------------------------------")
+    print("data:" + str(pgsql_delete))
     # 建立数据库连接
     conn = psycopg2.connect(
         dbname=db_name, user=db_user, password=db_pass, host=db_host, port=db_port
@@ -388,6 +417,7 @@ def queryDiff():
 
 
 def ajaxSend():
+    print("-----------------------------------提交结果----------------------------------")
     timet = str(datetime.now() - timedelta(seconds=5))
     action = "/api/syncinsurance/syncinsdataresult"
 
@@ -445,37 +475,38 @@ def random_seconds(min_time=3, max_time=10):
 
 # 主入口
 def main():
-    print(
-        f"--------------------------------------------------------------------------------------------"
-    )
-    print(
-        f"0.启动拉取程序----------------------------------------start----------------------------------"
-    )
-    print(
-        f"--------------------------------------------------------------------------------------------"
-    )
+    print(" ")
+    # print(
+    #     f"0.启动拉取程序----------------------------------------start----------------------------------"
+    # )
+   
     # 发起数据拉取请求
     getinsdata()
-    print(
-        f"1.拉取列表数据----------------------------------------getinsdata-end--------------------------"
-    )
-
+    print(" ")
+    print(" ")
+    # print(
+    #     f"1.拉取列表数据----------------------------------------getinsdata-end--------------------------"
+    # )
+    print(" ")
+    print(" ")
     # 清空已存在数据
     queryDiff()
-    print(
-        f"2.清除历史数据----------------------------------------queryDiff-end--------------------------"
-    )
-
+    # print(
+    #     f"2.清除历史数据----------------------------------------queryDiff-end--------------------------"
+    # )
+    print(" ")
+    print(" ")
     connPgInstall()
-    print(
-        f"3.连接提交数据----------------------------------------connPgInstall-end------------------------"
-    )
-
+    # print(
+    #     f"3.连接提交数据----------------------------------------connPgInstall-end------------------------"
+    # )
+    print(" ")
+    print(" ")
     # # 同步拉取结果
     ajaxSend()
-    print(
-        f"4.同步拉取结果----------------------------------------ajaxSend-end------------------------"
-    )
+    # print(
+    #     f"4.同步拉取结果----------------------------------------ajaxSend-end------------------------"
+    # )
 
     # 清空上次内容
     global pgsql_bj
@@ -489,7 +520,9 @@ def main():
 
 
 if __name__ == "__main__":
+    index=0
     while True:
-
+        index=index+1
+        print("NO "+str(index)+"批次请求")
         main()
         time.sleep(random_seconds())  # 等待10秒
